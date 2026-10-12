@@ -37,14 +37,14 @@ export const FloatingWhatsApp = () => {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Direct WhatsApp Chat with AuraCare Clinic"
-        className="group relative flex items-center gap-2.5 bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-3.5 rounded-full shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 hover:scale-105 active:scale-95 transition-all duration-300"
+        className="group relative flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white p-3 sm:px-4 sm:py-3.5 rounded-full shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 hover:scale-105 active:scale-95 transition-all duration-300"
       >
-        <span className="relative flex h-3 w-3">
+        <span className="relative flex h-2.5 w-2.5 sm:h-3 sm:w-3">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-100 opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+          <span className="relative inline-flex rounded-full h-2.5 w-2.5 sm:h-3 sm:w-3 bg-white"></span>
         </span>
         <MessageCircle className="w-5 h-5 fill-current" />
-        <span className="text-sm font-semibold tracking-wide pr-1">WhatsApp Chat</span>
+        <span className="hidden sm:inline text-sm font-semibold tracking-wide pr-1">WhatsApp Chat</span>
       </a>
     </div>
   );

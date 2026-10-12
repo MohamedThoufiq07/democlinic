@@ -48,15 +48,14 @@ export const Home = () => {
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-6">
               {/* Category pill & Social proof */}
-              <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1.5 sm:px-3.5 sm:py-1.5 rounded-2xl sm:rounded-full bg-teal-50 border border-teal-200/80 shadow-soft-sm max-w-full">
-                <div className="flex items-center gap-1.5">
+              <div className="inline-flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 px-3.5 py-2 sm:px-4 sm:py-1.5 rounded-2xl sm:rounded-full bg-teal-50/90 border border-teal-200/90 shadow-soft-sm w-fit max-w-full">
+                <div className="flex items-center gap-2">
                   <span className="flex h-2 w-2 rounded-full bg-teal-500 animate-pulse shrink-0" />
-                  <span className="text-[11px] sm:text-xs font-bold text-teal-800 tracking-wide uppercase whitespace-nowrap">
+                  <span className="text-[11px] sm:text-xs font-bold text-teal-900 tracking-wide uppercase">
                     Accredited Clinical Excellence
                   </span>
                 </div>
-                <span className="hidden sm:inline text-teal-300 font-normal">|</span>
-                <div className="flex items-center gap-1 text-[11px] sm:text-xs font-semibold text-slate-700 whitespace-nowrap">
+                <div className="flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold text-slate-700 pl-4 sm:pl-0 sm:border-l sm:border-teal-300 sm:ml-1">
                   <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400 shrink-0" />
                   <span>4.9/5 (15,000+ Consultations)</span>
                 </div>
@@ -95,12 +94,12 @@ export const Home = () => {
               </div>
 
               {/* Doctor Avatar Stack & Micro-Trust */}
-              <div className="pt-4 flex items-center gap-4 border-t border-slate-200/80">
-                <div className="flex -space-x-3 overflow-hidden p-1">
+              <div className="pt-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 border-t border-slate-200/80">
+                <div className="flex -space-x-2.5 overflow-hidden p-0.5 shrink-0">
                   {DOCTORS.map((doc) => (
                     <img
                       key={doc.id}
-                      className="inline-block h-11 w-11 rounded-full ring-2 ring-white object-cover shadow-sm"
+                      className="inline-block h-10 w-10 sm:h-11 sm:w-11 rounded-full ring-2 ring-white object-cover shadow-sm"
                       src={doc.avatar}
                       alt={doc.name}
                     />
@@ -108,10 +107,10 @@ export const Home = () => {
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-900">
-                    <CheckCircle className="w-4 h-4 text-teal-600" />
+                    <CheckCircle className="w-4 h-4 text-teal-600 shrink-0" />
                     <span>Board-Certified Specialists on Duty</span>
                   </div>
-                  <p className="text-xs text-slate-500 mt-0.5">
+                  <p className="text-[11px] sm:text-xs text-slate-500 mt-0.5">
                     Available for in-person consultations & diagnostics today.
                   </p>
                 </div>
