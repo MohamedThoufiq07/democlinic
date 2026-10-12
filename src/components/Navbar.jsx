@@ -15,29 +15,31 @@ import { CLINIC_INFO } from '../data/clinicData';
 
 export const TopAlertBar = () => {
   return (
-    <div className="bg-slate-900 text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
-      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-        <div className="flex items-center gap-3">
-          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-teal-500/10 text-teal-400 font-medium text-xs border border-teal-500/30">
+    <div className="bg-slate-900 text-slate-200 text-xs py-2 px-3 sm:px-6 border-b border-slate-800">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-1.5 sm:gap-2 text-center md:text-left">
+        {/* Left Side: Emergency Desk & Hotline */}
+        <div className="flex flex-wrap items-center justify-center md:justify-start gap-1.5 sm:gap-2.5">
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-teal-500/15 text-teal-400 font-semibold text-[11px] sm:text-xs border border-teal-500/30 whitespace-nowrap">
             <span className="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse"></span>
             Emergency Desk 24/7
           </span>
-          <span className="hidden md:inline text-slate-400">|</span>
-          <span className="text-slate-300 font-normal">
-            Need urgent assistance? Hotline: 
-            <a href={`tel:${CLINIC_INFO.emergencyPhone}`} className="text-white font-semibold ml-1.5 hover:text-teal-300 transition-colors">
+          <span className="text-slate-300 text-[11px] sm:text-xs">
+            <span className="hidden sm:inline text-slate-400 mr-1">Hotline:</span>
+            <a href={`tel:${CLINIC_INFO.emergencyPhone}`} className="text-white font-bold hover:text-teal-300 transition-colors underline sm:no-underline">
               {CLINIC_INFO.emergencyPhone}
             </a>
           </span>
         </div>
 
-        <div className="flex items-center gap-4 text-xs text-slate-300">
-          <span className="flex items-center gap-1 text-slate-400">
-            <Clock className="w-3.5 h-3.5 text-teal-400" />
+        {/* Right Side: OPD Hours & Location */}
+        <div className="flex items-center justify-center gap-3 sm:gap-4 text-[11px] sm:text-xs text-slate-400">
+          <span className="flex items-center gap-1">
+            <Clock className="w-3 h-3 text-teal-400 shrink-0" />
             <span>OPD: 8:00 AM – 9:00 PM</span>
           </span>
-          <span className="hidden lg:flex items-center gap-1 text-slate-400">
-            <MapPin className="w-3.5 h-3.5 text-teal-400" />
+          <span className="hidden sm:flex items-center gap-1 text-slate-400">
+            <span className="text-slate-600">•</span>
+            <MapPin className="w-3 h-3 text-teal-400 shrink-0" />
             <span>Sector 14, Health City</span>
           </span>
         </div>

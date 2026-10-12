@@ -48,14 +48,16 @@ export const Home = () => {
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-6">
               {/* Category pill & Social proof */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-50 border border-teal-200/80 shadow-soft-sm">
-                <span className="flex h-2 w-2 rounded-full bg-teal-500 animate-pulse" />
-                <span className="text-xs font-bold text-teal-800 tracking-wide uppercase">
-                  Accredited Clinical Excellence
-                </span>
-                <span className="text-teal-400 font-normal">|</span>
-                <div className="flex items-center gap-1 text-xs font-semibold text-slate-700">
-                  <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+              <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1.5 sm:px-3.5 sm:py-1.5 rounded-2xl sm:rounded-full bg-teal-50 border border-teal-200/80 shadow-soft-sm max-w-full">
+                <div className="flex items-center gap-1.5">
+                  <span className="flex h-2 w-2 rounded-full bg-teal-500 animate-pulse shrink-0" />
+                  <span className="text-[11px] sm:text-xs font-bold text-teal-800 tracking-wide uppercase whitespace-nowrap">
+                    Accredited Clinical Excellence
+                  </span>
+                </div>
+                <span className="hidden sm:inline text-teal-300 font-normal">|</span>
+                <div className="flex items-center gap-1 text-[11px] sm:text-xs font-semibold text-slate-700 whitespace-nowrap">
+                  <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400 shrink-0" />
                   <span>4.9/5 (15,000+ Consultations)</span>
                 </div>
               </div>
