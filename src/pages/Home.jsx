@@ -168,7 +168,7 @@ export const Home = () => {
                 </div>
 
                 {/* Floating Micro-Badge */}
-                <div className="absolute -bottom-5 -left-4 sm:-left-6 bg-white rounded-2xl shadow-xl border border-slate-100 p-4 flex items-center gap-3.5 max-w-xs animate-bounce duration-1000">
+                <div className="mt-4 sm:mt-0 sm:absolute sm:-bottom-5 sm:-left-6 bg-white rounded-2xl shadow-lg sm:shadow-xl border border-slate-200/90 sm:border-slate-100 p-3.5 sm:p-4 flex items-center gap-3.5 max-w-full sm:max-w-xs animate-bounce duration-1000">
                   <div className="w-10 h-10 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center shrink-0">
                     <ShieldCheck className="w-5 h-5" />
                   </div>
